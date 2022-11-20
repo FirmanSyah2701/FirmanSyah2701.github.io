@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Firman Syah</title>
-    <link rel="preload" as="image" href="dist/img/my_photo.png">
-    <link rel="stylesheet" href="dist/animation.css">
+    <link rel="preload" as="image" href="dist/img/my_photo.webp">
+    <link rel="stylesheet" href="dist/animation.min.css">
     <link rel="stylesheet" href="dist/final.css">
 </head>
 <body>
@@ -19,7 +19,7 @@
                     </a>
                 </div>
                 <div class="flex items-center px-4">
-                    <button id="hamburger" name="hamburger" type="button"
+                    <button id="hamburger" aria-label="hamburger" type="button"
                     class="block absolute right-4 lg:hidden">
                         <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
                         <span class="hamburger-line transition duration-300 ease-in-out"></span>
@@ -61,6 +61,7 @@
             </div>
         </div>
     </header>
+
     <!-- Hero section start -->
     <section id="home" class="pt-36">
         <div class="container">
@@ -69,7 +70,7 @@
                     <h1 class="text-base font-semibold text-dark md:text-xl">
                         <!-- Greeting -->
                         Hello Everyone 👋, My name is 
-                        <span class="type-writer block mt-1 text-primary">
+                        <span aria-label="name" class="type-writer block mt-1 text-primary">
                             Firman Syah
                         </span>
                     </h1>
@@ -85,13 +86,12 @@
                 </div>
                 <div class="w-full self-end px-4 lg:w-1/2">
                     <div class="relative mt-10 lg:mt-9 lg:right-0">
-                        <img src="dist/img/my_photo.png" alt="Firman's Photo" 
+                        <img src="dist/img/my_photo.webp" alt="Firman's Photo" 
                         class="max-w-full mx-auto">
                         <span class="absolute -bottom-0 -z-10 left-1/2 -translate-x-1/2 md:scale-125">
-                            <svg width="320" height="320" 
-                            viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="320" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                                 <path 
-                                    fill="#14b8ab" 
+                                    fill="#0c6078" 
                                     d="M33.7,-22.8C47.1,-10,63.9,4.2,63.8,18.7C63.8,33.2,47,
                                     47.9,29.7,52.8C12.4,57.8,-5.4,52.9,-21.3,44.9C-37.3,37,
                                     -51.4,26,-55.2,11.8C-59.1,-2.3,-52.6,-19.6,-41.7,-31.7C-30.8,
@@ -143,7 +143,7 @@
             <div class="flex flex-wrap">
                 <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
                     <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
-                        <img src="dist/img/sipp.png" width="600" height="300" alt="SIPP Project">
+                        <img src="dist/img/sipp.webp" width="600" alt="SIPP Project">
                         <div class="py-8 px-6">
                             <h3 class="mb-3 font-semibold text-xl text-dark">
                                 Sistem Informasi Pelayanan Puskesmas Plumbon
@@ -161,7 +161,7 @@
                 </div>
                 <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
                     <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
-                        <img src="dist/img/nusa_shop.png" width="600" height="300" alt="Nusa Shop Project">
+                        <img src="dist/img/nusa_shop.webp" width="600" alt="Nusa Shop Project" loading="lazy">
                         <div class="py-8 px-6">
                             <h3 class="mb-3 font-semibold text-xl text-dark">
                                 Nusa Shop
@@ -179,8 +179,8 @@
                 </div>
                 <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
                     <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
-                        <img src="dist/img/perpusku.png" alt="Perpusku Project" 
-                        width="600" height="300" loading="lazy">
+                        <img src="dist/img/perpusku.webp" alt="Perpusku Project" 
+                        width="600" loading="lazy">
                         <div class="py-8 px-6">
                             <h3 class="mb-3 font-semibold text-xl text-dark">
                                 Perpusku
@@ -198,8 +198,8 @@
                 </div>
                 <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
                     <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
-                        <img src="dist/img/shuttle_in.png" alt="ShuttleIn Project" 
-                        width="600" height="300" loading="lazy">
+                        <img src="dist/img/shuttle_in.webp" alt="ShuttleIn Project" 
+                        width="600" loading="lazy">
                         <div class="py-8 px-6">
                             <h3 class="mb-3 font-semibold text-xl text-dark">
                                 Shuttle In
@@ -218,8 +218,8 @@
                 </div>
                 <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
                     <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
-                        <img src="dist/img/sipp.png" alt="Sinpos Project" 
-                        width="600" height="300" loading="lazy">
+                        <img src="dist/img/sipp.webp" alt="Sinpos Project" 
+                        width="600" loading="lazy">
                         <div class="py-8 px-6">
                             <h3 class="mb-3 font-semibold text-xl text-dark">
                                 Sistem Integrasi Posyandu
@@ -334,6 +334,6 @@
     </footer>
     <!-- Footer end -->
 
-    <script src="dist/js/script.js"></script>
+    <script src="dist/js/final.js"></script>
 </body>
 </html>

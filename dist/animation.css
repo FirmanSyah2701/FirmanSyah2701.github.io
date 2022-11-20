@@ -8,7 +8,7 @@
 @keyframes typing {
   from {
     width: 0;
-    border-right: 0.15em solid #18bdec;
+    border-right: 0.15em solid #0c6078;
   }
   to {
     width: 100%;
